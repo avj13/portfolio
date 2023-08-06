@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Portfolio Template - Open source</title>
+    <meta name="title" content="Portfolio Template - Open source" />
+    <meta name="description"
+      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/CommunityPro/portfolio-html" />
+    <meta property="og:title" content="Portfolio Template - Open source" />
+    <meta property="og:description"
+      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project" />
+    <meta property="og:image"
+      content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://github.com/CommunityPro/portfolio-html" />
+    <meta property="twitter:title" content="Portfolio Template - Open source" />
+    <meta property="twitter:description"
+      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project" />
+    <meta property="twitter:image"
+      content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png" />
+
+    <!-- Link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32" />
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png" />
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <script src="https://kit.fontawesome.com/401befcf0e.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header id="hero">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="" target="_blank"><img src="./favicon/android-chrome-512x512.png" alt="Your Logo" /></a>
+            <!-- TODO: CHANGE LOGO FAVICON -->
+
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a><a class="nav-link" href="#about">ABOUT ME</a></a></li>
+            <li><a><a class="nav-link" href="#skills">SKILLS</a></a></li>
+            <li><a><a class="nav-link" href="#experience">EXPERIENCE</a></a></li>
+            <li><a><a class="nav-link" href="#projects">PROJECTS</a></a></li>
+            <li><a><a class="nav-link" href="#contact">CONTACT ME</a></a></li>
+
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <section class="header-container">
+        <!-- TODO CHANGE IMAGE PROFILE -->
+        <img class="profile-image" src="assets/profile-image.svg" alt="" />
+        <h1>Hi I'm Avesh Jindal</h1>
+
+        <div class="content-text">
+          <h2>Building digital</h2>
+          <h2>products, brands, and experience.</h2>
+
+          <p>
+            A Backend Developer with experience in web
+            design, brand identity and product design.
+          </p>
+        </div>
+        <a href="#contact" class="btn btn-secondary" target="">Connect With
+          Me</a>
+      </section>
+    </header>
+
+    <main>
+
+       <!-- ==== About ==== -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <h1>About Me</h1>
+              <p>
+                I'm a Software Engineer whose code
+                sometimes works :-P . I am passionate
+                about delivering value through technology. I
+                love the challenge of finding creative solutions to
+                problems, and I enjoy collaborating with teams to achieve
+                great results.<br />
+              </p>
+              <br>
+              <p>
+                I am dedicated to keeping up-to-date with the latest
+                technologies and trends to provide the best solutions.
+              </p>
+              <br>
+              <p>
+                I pay great attention to detail in the design and
+                development of my projects. My ultimate goal is to create
+                software that is both user-friendly and impactful in
+                achieving the objectives.
+              </p>
+            </div>
+            <div class="about-col-2">
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('certification')">Certification</p>
+              </div>
+
+              <div class="tab-contents active-tab" id="skills">
+                <ul class="skill-list">
+                  <li class="skills">
+                    <img  src="./img/stack-icons/html.svg" alt="html" style="height: 25px;"/>
+                    <span class="skill-custom">HTML</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/css.svg" alt="css" style="height: 25px;"/>
+                    <span class="skill-custom">CSS</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/bootstrap.svg" alt="bootstrap"style="height: 25px;"/>
+                    <span class="skill-custom">Bootstrap</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/javascript.svg" alt="javascript" style="height: 25px;"/>
+                    <span class="skill-custom">JavaScript</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/java.svg" alt="java" style="height: 25px;"/>
+                    <span class="skill-custom">Java</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/spring.svg" alt="springboot" style="height: 25px;"/>
+                    <span class="skill-custom">Springboot</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/python.svg" alt="python" style="height: 25px;"/>
+                    <span class="skill-custom">Python</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/django.svg" alt="django" style="height: 25px;"/>
+                    <span class="skill-custom">Django</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/postgresql.svg" alt="postgres" style="height: 25px;"/>
+                    <span class="skill-custom">Postgres</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/kafka.svg" alt="kafka" style="height: 25px;"/>
+                    <span class="skill-custom">Kafka</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/docker-svgrepo-com.svg" alt="docker" style="height: 25px;"/>
+                    <span class="skill-custom">Docker</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/grafana.svg" alt="grafana" style="height: 25px;"/>
+                    <span class="skill-custom">Grafana</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/elastic-svgrepo-com.svg" alt="kibana" style="height: 25px;"/>
+                    <span class="skill-custom">Kibana</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/github.svg" alt="github" style="height: 25px;"/>
+                    <span class="skill-custom">Git</span>
+                  </li>
+                  <li class="skills">
+                    <img src="./img/stack-icons/aws.svg" alt="Amazon Web Services" style="height: 25px;"/>
+                    <span class="skill-custom"> AWS</span>
+                  </li>
+
+                  <li class="skills">
+                    <img src="./img/stack-icons/datascience.svg" alt="Data Science" style="height: 25px;"/>
+                    <span class="skill-custom">Data Science</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2016-2020</span><br>Bechalor's in Computer Engineering at Thapar University, Patiala</li>
+                  <li><span>2013-2015</span><br>Pre-University Education in PCM at DAV Public School, Patiala</li>
+                  <li><span>2005-2013</span><br>Marticulation at Kaintal School, Patiala</li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="certification">
+                <ul>
+                  <li><span>2021</span><br>IBM Data Science Professional Certification<br><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/TUWPN8BBJHBA"><i class="fa-solid fa-link"></i></a></li>
+                  <li><span>2020</span><br>Deep Learning Specialization<br><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/GTAWR89LEQ9U"><i class="fa-solid fa-link"></i></a></li>
+                  <li><span>2021</span><br>Problem Solving - Hackerrank<br><a href="https://www.hackerrank.com/certificates/b63209635c3b"><i class="fa-solid fa-link"></i></a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- <div class="links">
+        <a class="hover-effect">
+          LINKS →
+        </a>
+      </div> -->
+
+      <!-- ------------Expertise---------- -->
+      <section id="expertise">
+        <div class="container">
+          <h2 class="section-title">EXPERTISE</h2>
+          <div class="area-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Backend Development</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <a href="#" target="#">Learn more</a>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-brain"></i>
+              <h2>Data Science</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <!-- <a href="#" target="#">learn more</a> -->
+            </div>
+ 
+            <div>
+              <i class="fa-solid fa-rectangle-list"></i>
+              <h2>Data Structures</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <a href="https://leetcode.com/avj13/" target="#">Learn more</a>
+            </div>
+ 
+          </div>
+
+
+
+        </div>
+      </section>
+
+      <!-- --------------------Experience-------------- -->
+      <section id="experience" class="experience-container">
+        <div class="container">
+          <div class="content-text">
+            <h2>Experience</h2>
+            <p>Some of the work done so far...</p>
+          </div>
+
+          <div class="content-cards">
+            <div class="exp_list">
+
+              <!-- Card 1 -->
+              <a href="https://www.halodoc.com/" target="#">
+                <div class="exp_card" id="1">
+                  <div class="experience_info">
+                    <div class="experience-timeline">
+                      <p>2022-2023</p>
+                    </div>
+                    <div class="company_bio">
+                      <h4>Software Engineer</h4>
+                      <h3>Halodoc</h3>
+                      <p>Java | Python | MySQL | Kafka | AWS | Kubernetes</p>
+                      <p>Build functional pipelines and optimizations for infrastructures, deliver automations across
+                        microservice and cloud architecture.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+
+              <!-- Card 2 -->
+              <a href="https://brightmoney.co" target="#">
+                <div class="exp_card" id="bright">
+                  <div class="experience_info">
+                    <div class="experience-timeline">
+                      <p>2021-2022</p>
+                    </div>
+                    <div class="company_bio">
+                      <h4>Software Engineer</h4>
+                      <h3>Bright Money</h3>
+                      <p>Python | Django | Postgresql | RabbitMQ | AWS | Airflow</p>
+                      <p>Delivering product & feature dependencies for ML & Financial Management microservices,
+                        Performance Optimization & Issue Resolution.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- Card 3 -->
+              <div class="exp_card">
+                <div class="experience_info">
+                  <div class="experience-timeline">
+                    <p>2020-2021</p>
+                  </div>
+                  <div class="company_bio">
+                    <h4>Developer</h4>
+                    <h3>Standard Chartered Bank</h3>
+                    <p>Java | Python | Springboot | REST API | Pandas | React</p>
+                    <p>Building automated pipelines for document processing and use cases to upgrade legacy solutions and
+                      implement new pilot services.</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Card 4 -->
+              <div class="exp_card">
+                <div class="experience_info">
+                  <div class="experience-timeline">
+                    <p>2019-2020</p>
+                  </div>
+                  <div class="company_bio">
+                    <h4>Research Scholar</h4>
+                    <h3>Thapar University - CSED</h3>
+                    <p>Python | Data Science | Machine Learning | Neural Networks </p>
+                    <p>Developed multi layered NN model Pattern Recognition models for micro-cracks identification in RC
+                      beams & published research paper</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+
+      <!--------------- Projects --------------------->
+      <section id="projects">
+        <div class="division"></div>
+          <div class="content-text">
+            <h2>Projects</h2>
+            <p>Here's a few of the projects I've worked on. For more, check out my <a class="inline-git"
+                href="https://github.com/avj13">GitHub profile</a>.</p>
+          </div>
+
+          <article class="project_list">
+            <!-- Project 1 -->
+            <a href="https://github.com/avj13/Coursera_Capstone" class="card">
+              <div>
+                <div class="project-info">
+                  <div class="project-bio">
+                    <i class="fab fa-github"></i>
+                    <h3>Battle of Neighbourhoods</h3>
+                    <p>Python | Data Science</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="https://github.com/avj13/cron_parser" class="card">
+              <div>
+                <div class="project-info">
+                  <div class="project-bio">
+                    <i class="fab fa-github"></i>
+                    <h3>Cron Parser</h3>
+                    <p>Python</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Porject 3 -->
+            <a href="https://github.com/avj13/SMS_API" class="card">
+              <div>
+                <div class="project-info">
+                  <div class="project-bio">
+                    <i class="fab fa-github"></i>
+                    <h3>SMS Service</h3>
+                    <p>Java | Redis | MySQL | REST</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="https://github.com/avj13/youtube_proj" class="card">
+              <div>
+                <div class="project-info">
+                  <div class="project-bio">
+                    <i class="fab fa-github"></i>
+                    <h3>YouTube Crawler</h3>
+                    <p>Python | REST API | Docker</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+
+          </article>
+
+          <a href="https://github.com/avj13?tab=repositories" class="btn btn-secondary" target="_blank">See More <i
+              class="fas fa-arrow-right"></i></a>
+        
+      </section>
+
+
+      <!-- --------------------contact------------ -->
+      <section id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="contact-left">
+                <h2>Contact Me</h2>
+                <a href="mailto:aveshjindal@gmail.com"><i class="fa-solid fa-paper-plane"></i>aveshjindal@gmail.com</a>
+                <a><i class="fa-solid fa-phone"></i> +91-9646511500</a>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/avesh-jindal/"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/avj13"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.instagram.com/avesh_jindal/"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href=""><i class="fa-brands fa-mail"></i></a> -->
+                </div>
+              </div>
+              <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name*" required>
+                  <input type="email" name="Email" placeholder="Your Email Address*" required>
+                  <input type="tel" name="Mobile" placeholder="Your Contact/Mobile number">
+                  <input type="text" name="Subject" placeholder="Subject of the email">
+                  <textarea name="Messege" rows="7" placeholder="Your Messege here" required></textarea>
+                  <button class="btn2" type="submit">Send</button>
+                </form>
+                <span id="msg"></span>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+      <footer id="footer">
+        <div class="container">
+          <!-- Social links -->
+          <div class="social">
+            <a href="#" target="_blank"><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
+            <a href="#" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>
+            <a href="#" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+            <a href="#" target="_blank"><img src="./assets/hashnode-icon.svg" alt="Hashnode" /></a>
+          </div>
+          <!-- Attribution -->
+          <p>Copyright &copy; Avesh Jindal <span id="datee"></span>, Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+      </footer>
+      <script src="js/script.js"></script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxUe7-QAyik0ldSCmC2kH7Wpt_uWOoqrJ0EdT6CxicRJGMZr1AKmIzus3Y6SzW1G0s/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+              console.log('Success!', response)
+              msg.innerHTML = "Messege Sent Successfully"
+              setTimeout(function () {
+                msg.innerHTML = ""
+              }, 10000)
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+      </script>
+    </main>
+  </body>
+
+</html>
