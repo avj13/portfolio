@@ -312,10 +312,14 @@ body {
   margin: 10px 16px;
 }
 
+.tab-contents ul li p{
+  color:#4266c7;
+}
 .tab-contents ul li span{
   color: #ff004f;
   font-size: 14px;
 }
+
 
 .tab-contents .skill-list{
   display: none;
