@@ -259,8 +259,9 @@ body {
 
 
 /*----------------- about-------------------- */
-#about1{
+#about{
   padding: 80px 0;
+  font-weight: 450;
 }
 .row{
   display: flex;
@@ -286,7 +287,7 @@ body {
 .tab-links{
   margin-right: 50px;
   font-size:18px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   position:relative;
 }
@@ -308,7 +309,7 @@ body {
 
 .tab-contents ul li{
   list-style: none;
-  margin: 10px 0;
+  margin: 10px 16px;
 }
 
 .tab-contents ul li span{
@@ -338,12 +339,6 @@ body {
   display: block;
 }
 
-/* .tab-contents.active-tab .skill-list li img{
-  display: block;
-  height: 25px;
-} */
-
-
 
 
 #about {
@@ -361,44 +356,6 @@ body {
   height: 50%;
   width: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --------------------skills---------------------------------- */
-#skills {
-  display: flex;
-  height: 100%;
-  padding: 30px;
-  margin: 20px 0;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.container .row-skill .skill_section .skill-list img {
-  height: 20px;
-}
-
-.container .row-skill .skill_section .skill-list li .skill-custom {
-  padding: 0.2rem 0.5rem;
-  background: var(--tag-clr);
-  border-radius: 2px;
-  color: var(--primary-clr);
-  font-size: clamp(1.15rem, 1vw, 1.3rem);
-}
-
-
-
 
 
 
