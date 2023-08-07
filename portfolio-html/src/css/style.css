@@ -128,12 +128,12 @@ body {
   font-weight: var(--weight-semibold);
 }
 
-.navbar .container .nav-menu li a {
+.navbar .container .nav-menu li a{
   text-decoration: none;
   position: relative;
 }
 
-.navbar .container .nav-menu li b::after {
+.navbar .container .nav-menu li a::after {
   content: '';
   width: 0;
   height: 3px;
@@ -144,7 +144,7 @@ body {
   transition: 0.2s;
 }
 
-.navbar .container .nav-menu li b:hover::after {
+.navbar .container .nav-menu li a:hover::after {
   width: 100%;
 }
 
