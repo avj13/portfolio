@@ -440,60 +440,44 @@
                 <div class="social-icons">
                   <a href="https://www.linkedin.com/in/avesh-jindal/"><i class="fa-brands fa-linkedin"></i></a>
                   <a href="https://github.com/avj13"><i class="fa-brands fa-github"></i></a>
-                  <a href="https://www.instagram.com/avesh_jindal/"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="https://www.instagram.com/avesh_jindal/"><i class="fa-brands fa-instagram"></i></a> -->
                   <!-- <a href=""><i class="fa-brands fa-mail"></i></a> -->
                 </div>
               </div>
+
               <div class="contact-right">
-                <form name="submit-to-google-sheet">
+
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCiq-n9xrch31iFoDu0V1yV_nsAgEt3XahvPlsdZWahHgtMQ/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0" style="border:none;">Loading…</iframe>          
+          
+                <!-- <form name="submit-to-google-sheet">
                   <input type="text" name="Name" placeholder="Your Name*" required>
                   <input type="email" name="Email" placeholder="Your Email Address*" required>
                   <input type="tel" name="Mobile" placeholder="Your Contact/Mobile number">
                   <input type="text" name="Subject" placeholder="Subject of the email">
                   <textarea name="Messege" rows="7" placeholder="Your Messege here" required></textarea>
                   <button class="btn2" type="submit">Send</button>
-                </form>
-                <span id="msg"></span>
+                </form> -->
+                <!-- <span id="msg"></span> -->
               </div>
 
             </div>
           </div>
-
         </section>
 
       <footer id="footer">
         <div class="container">
           <!-- Social links -->
           <div class="social">
-            <a href="#" target="_blank"><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
-            <a href="#" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>
-            <a href="#" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
-            <a href="#" target="_blank"><img src="./assets/hashnode-icon.svg" alt="Hashnode" /></a>
+            <a href="" target=""><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
+            <a href="https://www.linkedin.com/in/avesh-jindal/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>
+            <a href="https://github.com/avj13" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+            <!-- <a href="#" target="_blank"><img src="./assets/hashnode-icon.svg" alt="Hashnode" /></a> -->
           </div>
           <!-- Attribution -->
           <p>Copyright &copy; Avesh Jindal <span id="datee"></span>, Made with <i class="fa-solid fa-heart"></i></p>
         </div>
       </footer>
       <script src="js/script.js"></script>
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxUe7-QAyik0ldSCmC2kH7Wpt_uWOoqrJ0EdT6CxicRJGMZr1AKmIzus3Y6SzW1G0s/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-              console.log('Success!', response)
-              msg.innerHTML = "Messege Sent Successfully"
-              setTimeout(function () {
-                msg.innerHTML = ""
-              }, 10000)
-              form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
 
       <script>
         var tablinks = document.getElementsByClassName("tab-links");
